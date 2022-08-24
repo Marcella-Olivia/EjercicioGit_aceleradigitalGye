@@ -1,0 +1,35 @@
+!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<script>
+
+let inicioo=["unacadena",3,9,1,10,500,1,10,true];
+let numeros= [];
+
+for (let index = 0; index < inicioo.length; index++) {
+if(typeof(inicioo[index])==='number') { 
+numeros.push(inicioo[index]);
+}
+      
+}
+for (let index1 = 0; index1 < numeros.length; index1++) {
+    for (let index2 = 0; index2 < numeros.length; index2++) {
+        if(numeros[index1]>numeros[index2]) {
+            let auxiliar= numeros[index1]
+            numeros[index1]=numeros[index2]
+            numeros[index2]=auxiliar
+        }
+        
+    }
+    
+}
+console.log(numeros);
+
+</script>
+
+
+</body>
+
+
+</html>
