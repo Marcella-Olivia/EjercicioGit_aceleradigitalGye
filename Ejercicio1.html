@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+<script> 
+function fibonacci(NumeroDeElementos){
+    inicio=[0,1]
+    for(let i=2; i<=NumeroDeElementos; i++) {
+        let numbadd= inicio[i-1]+inicio[i-2]
+        inicio.push(numbadd);
+
+    } return inicio
+}
+console.log(fibonacci());
+</script>
+</body>
+<html>
